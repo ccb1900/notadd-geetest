@@ -7,6 +7,9 @@
         "notadd Security",
         "geetest"
     ],
+    "config": {
+        "vendor-dir": "extensions"
+    },
     "homepage": "https://github.com/bluegeek/notadd-geetest",
     "license": "MIT",
     "authors": [
