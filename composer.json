@@ -21,8 +21,7 @@
         }
     ],
     "require": {
-        "php": ">=5.4",
-        "gee-team/gt3-php-sdk": "dev-master"
+      "php": ">=5.4"
     },
     "require-dev": {
         "notadd/installers": "0.5.*"
