@@ -2,20 +2,20 @@
 /**
  * This file is part of Notadd.
  *
- * @author TwilRoad <269044570@qq.com>
- * @copyright (c) 2017, iBenchu.org
- * @datetime 2017-02-23 19:36
+ * @author        waterloocode <330316259@qq.com>
+ * @copyright (c) 2017, guojianhang.top
+ * @datetime      2017-05-25 23:12
  */
 namespace Notadd\GeeTest;
 
 use Illuminate\Events\Dispatcher;
+use Notadd\Content\Models\Article;
+use Notadd\Content\Models\Page;
+use Notadd\Foundation\Extension\Abstracts\Extension as AbstractExtension;
 use Notadd\GeeTest\Listeners\CsrfTokenRegister;
 use Notadd\GeeTest\Listeners\RouteRegister;
 use Notadd\GeeTest\Observers\ArticleObserver;
 use Notadd\GeeTest\Observers\PageObserver;
-use Notadd\Content\Models\Article;
-use Notadd\Content\Models\Page;
-use Notadd\Foundation\Extension\Abstracts\Extension as AbstractExtension;
 
 /**
  * Class Extension.
