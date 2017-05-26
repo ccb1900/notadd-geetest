@@ -6,6 +6,7 @@
  * @copyright (c) 2017, guojianhang.top
  * @datetime      2017-05-25 23:12
  */
+
 namespace Notadd\GeeTest;
 
 use Illuminate\Events\Dispatcher;

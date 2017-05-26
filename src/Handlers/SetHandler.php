@@ -2,10 +2,11 @@
 /**
  * This file is part of Notadd.
  *
- * @author TwilRoad <269044570@qq.com>
+ * @author        TwilRoad <269044570@qq.com>
  * @copyright (c) 2017, iBenchu.org
- * @datetime 2017-02-23 19:45
+ * @datetime      2017-02-23 19:45
  */
+
 namespace Notadd\GeeTest\Handlers;
 
 use Illuminate\Container\Container;
@@ -55,9 +56,9 @@ class SetHandler extends AbstractSetHandler
     public function execute()
     {
         $prefix = "extension.waterloocode/notadd-geetest";
-        $this->settings->set($prefix.'.appid', $this->request->input('appid'));
-        $this->settings->set($prefix.'.appkey', $this->request->input('appkey'));
-        $this->settings->set($prefix.'.enabled', $this->request->input('enabled'));
+        $this->settings->set($prefix . '.appid', $this->request->input('appid'));
+        $this->settings->set($prefix . '.appkey', $this->request->input('appkey'));
+        $this->settings->set($prefix . '.enabled', $this->request->input('enabled'));
 
         return true;
     }

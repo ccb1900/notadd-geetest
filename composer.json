@@ -1,49 +1,49 @@
 {
-    "name": "waterloocode/notadd-geetest",
-    "type": "notadd-extension",
-    "description": "Laravel 5 Geetest Captcha Package",
-    "keywords": [
-        "notadd Captcha",
-        "notadd Security",
-        "geetest"
+  "name": "waterloocode/notadd-geetest",
+  "type": "notadd-extension",
+  "description": "Laravel 5 Geetest Captcha Package",
+  "keywords": [
+    "notadd Captcha",
+    "notadd Security",
+    "geetest"
+  ],
+  "config": {
+    "vendor-dir": "extensions"
+  },
+  "homepage": "https://github.com/bluegeek/notadd-geetest",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "waterloocode",
+      "email": "330316259@qq.com",
+      "homepage": "https://github.com/bluegeek",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "gee-team/gt3-php-sdk": "dev-master"
+  },
+  "require-dev": {
+    "notadd/installers": "0.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Notadd\\GeeTest\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests"
     ],
-    "config": {
-        "vendor-dir": "extensions"
-    },
-    "homepage": "https://github.com/bluegeek/notadd-geetest",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "waterloocode",
-            "email": "330316259@qq.com",
-            "homepage": "https://github.com/bluegeek",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-      "php": ">=5.4"
-    },
-    "require-dev": {
-        "notadd/installers": "0.5.*"
-    },
-    "autoload": {
-        "psr-4": {
-            "Notadd\\GeeTest\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "classmap": [
-            "tests"
-        ],
-        "psr-4": {
-            "Notadd\\Test\\": "tests"
-        }
-    },
-    "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/GeeTeam/gt3-php-sdk.git"
-        }
-    ]
+    "psr-4": {
+      "Notadd\\Test\\": "tests"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/GeeTeam/gt3-php-sdk.git"
+    }
+  ]
 }

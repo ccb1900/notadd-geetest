@@ -2,15 +2,16 @@
 /**
  * This file is part of Notadd.
  *
- * @author TwilRoad <269044570@qq.com>
+ * @author        TwilRoad <269044570@qq.com>
  * @copyright (c) 2017, iBenchu.org
- * @datetime 2017-02-23 19:44
+ * @datetime      2017-02-23 19:44
  */
+
 namespace Notadd\GeeTest\Controllers;
 
+use Notadd\Foundation\Routing\Abstracts\Controller;
 use Notadd\GeeTest\Handlers\GetHandler;
 use Notadd\GeeTest\Handlers\SetHandler;
-use Notadd\Foundation\Routing\Abstracts\Controller;
 
 /**
  * Class GeeTestController.

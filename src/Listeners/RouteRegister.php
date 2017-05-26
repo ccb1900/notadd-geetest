@@ -2,14 +2,15 @@
 /**
  * This file is part of Notadd.
  *
- * @author TwilRoad <269044570@qq.com>
+ * @author        TwilRoad <269044570@qq.com>
  * @copyright (c) 2017, iBenchu.org
- * @datetime 2017-02-23 19:42
+ * @datetime      2017-02-23 19:42
  */
+
 namespace Notadd\GeeTest\Listeners;
 
-use Notadd\GeeTest\Controllers\GeeTestController;
 use Notadd\Foundation\Routing\Abstracts\RouteRegister as AbstractRouteRegister;
+use Notadd\GeeTest\Controllers\GeeTestController;
 
 /**
  * Class RouteRegister.

@@ -1,22 +1,22 @@
 {
-    "presets": [
-        [
-            "es2015",
-            {
-                "modules": false
-            }
-        ],
-        "stage-2"
+  "presets": [
+    [
+      "es2015",
+      {
+        "modules": false
+      }
     ],
-    "plugins": [
-        "transform-runtime"
-    ],
-    "comments": false,
-    "env": {
-        "test": {
-            "plugins": [
-                "istanbul"
-            ]
-        }
+    "stage-2"
+  ],
+  "plugins": [
+    "transform-runtime"
+  ],
+  "comments": false,
+  "env": {
+    "test": {
+      "plugins": [
+        "istanbul"
+      ]
     }
+  }
 }

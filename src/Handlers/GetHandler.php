@@ -2,10 +2,11 @@
 /**
  * This file is part of Notadd.
  *
- * @author TwilRoad <269044570@qq.com>
+ * @author        TwilRoad <269044570@qq.com>
  * @copyright (c) 2017, iBenchu.org
- * @datetime 2017-04-10 19:41
+ * @datetime      2017-04-10 19:41
  */
+
 namespace Notadd\GeeTest\Handlers;
 
 use Illuminate\Container\Container;
@@ -42,10 +43,11 @@ class GetHandler extends DataHandler
     public function data()
     {
         $prefix = "extension.waterloocode/notadd-geetest";
+
         return [
-            'appid' => $this->settings->get($prefix.'.appid', ''),
-            'appkey' => $this->settings->get($prefix.'.appkey', ''),
-            'enabled' => $this->settings->get($prefix.'.enabled', ''),
+            'appid'   => $this->settings->get($prefix . '.appid', ''),
+            'appkey'  => $this->settings->get($prefix . '.appkey', ''),
+            'enabled' => $this->settings->get($prefix . '.enabled', ''),
         ];
     }
 }

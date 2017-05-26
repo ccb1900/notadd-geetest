@@ -11,26 +11,27 @@ var webpack = require('webpack');
 var config = require('../config');
 var buildWebpackConfig = require('./webpack.prod.conf');
 var webpackConfig = merge(buildWebpackConfig, {
-    plugins: [
-        new webpack.ProgressPlugin()
-    ],
-    watch: true
+  plugins: [
+    new webpack.ProgressPlugin()
+  ],
+  watch: true
 });
 
-rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
-    if (err) throw err;
-    webpack(webpackConfig, function (err, stats) {
-        if (err) throw err;
-        console.log('\n');
-        process.stdout.write(stats.toString({
-                colors: true,
-                modules: true,
-                children: false,
-                chunks: false,
-                chunkModules: false
-            }) + '\n');
+rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err = > {
+  if (err) throw err;
+webpack(webpackConfig, function (err, stats) {
+  if (err) throw err;
+  console.log('\n');
+  process.stdout.write(stats.toString({
+      colors: true,
+      modules: true,
+      children: false,
+      chunks: false,
+      chunkModules: false
+    }) + '\n');
 
-        console.log(chalk.cyan(`  Build completed at ${(new Date()).toLocaleString()}.`));
-        console.log(chalk.cyan('  Watching ...\n'));
-    });
+  console.log(chalk.cyan(`  Build completed at ${(new Date()).toLocaleString()}.`));
+  console.log(chalk.cyan('  Watching ...\n'));
 });
+})
+;
